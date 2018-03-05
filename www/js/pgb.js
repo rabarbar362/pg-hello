@@ -22,5 +22,6 @@ function deviceInfo() {
 }
 
 function personalInfo() {
-	info = 'Basia Nogaś'
+	info = 'Basia Nogas'
+	navigator.notification.alert(info);
 }
