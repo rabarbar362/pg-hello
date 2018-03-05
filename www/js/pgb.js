@@ -26,7 +26,7 @@ function personalInfo() {
 	navigator.notification.alert(info);
 }
 
-function businesCard() {
+function businessCard() {
 	info =  'Business Card :' + '\n' +
 			'********' + '\n' +
 			'Imię i nazwisko  : Barbara  Nogaś' + '\n' + 
