@@ -25,3 +25,15 @@ function personalInfo() {
 	info = 'Basia Nogas'
 	navigator.notification.alert(info);
 }
+
+function businesCard() {
+	info =  'Business Card :' + '\n' +
+			'********' + '\n' +
+			'Imię i nazwisko  : Barbara  Nogaś' + '\n' + 
+			'E-mail : barbara.nogas@gmail.com' + '\n' + 
+			'Website : brak'+ '\n' + 
+			'Grupa dziekańska : KrDUIs 1012' + '\n' + 
+			'Kierunek : Informatyka stosowana' + '\n';
+
+	navigator.notification.alert(info);
+}
