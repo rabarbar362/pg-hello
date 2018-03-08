@@ -15,7 +15,7 @@ function deviceInfo() {
 			'Device Model   : '    + device.model     + '\n' + 
 			'Device Version : '  + device.version  + '\n';
 
-	navigator.notification.alert('Hi, I am your smartphone :)',info, 'Info:', 'OK!');
+	navigator.notification.alert('Hi, I am your smartphone :)' + info, 'Info:', 'OK!');
 	
 }
 
@@ -44,5 +44,5 @@ function checkConnection() {
     states[Connection.CELL]     = 'Cell generic connection';
     states[Connection.NONE]     = 'No network connection';
  
-    navigator.notification.alert('Connection type: ', states[networkState], 'Check connection', 'OK!');
+    navigator.notification.alert('Connection type: ' + states[networkState], 'Check connection', 'OK!');
 }
