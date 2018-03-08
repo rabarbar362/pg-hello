@@ -9,18 +9,19 @@
     <author href="https://github.com/rabarbar362" email="barbara.nogas@gmail.com">
 		Barbara No.
 	</author>
-    <icon src="icon.png"/>
+   
 
 	<plugin name="cordova-plugin-device" spec="2.0.1" />
 	<plugin name="cordova-plugin-dialogs" spec="2.0.1" />
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2"/>
     <plugin name="cordova-plugin-network-information" spec="2.0.1"/>
 
-    <!-- <platform name="android">
-    <preference name="SplashScreen" value="splash/>
-    <preference name="SplashScreenDelay" value="3000" />
-    <splash src="www/img/splash.png"/>
-    </platform>-->
+    <platform name="android">
+    <!-- <preference name="SplashScreen" value="splash/>
+    <preference name="SplashScreenDelay" value="3000" />-->
+    <icon src="icon.png"/>
+    <splash src="splash.png"/>
+    </platform>
 
 
 
