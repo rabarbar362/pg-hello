@@ -10,9 +10,9 @@
 		Barbara No.
 	</author>
     <icon src="icon.png"/>
-    
+
     <preference name="SplashScreen" value="screen"/>
-    <splash platform="android" src="img/splash.png"/>
+    <splash platform="android" src="www/img/splash.png"/>
     <splash src="androidsplash.png" />
 
 
