@@ -17,12 +17,12 @@
     <plugin name="cordova-plugin-network-information" spec="2.0.1"/>
 
     <platform name="android">
-    <splash src="www/img/splash.png"/>
-    <splash src="splash.png" />
-    </platform>
-    
-    <preference name="SplashScreen" value="splash"/>
+    <preference name="SplashScreen" value="www/img"/>
     <preference name="SplashScreenDelay" value="3000" />
+    <splash src="www/img/splash.png"/>
+    </platform>
+
+
 
 
 </widget>
