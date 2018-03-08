@@ -10,10 +10,9 @@
 		Barbara No.
 	</author>
     <icon src="icon.png"/>
-    <platform name="android">
-    <splash src="splash.png"/>
-    </platform>
-
+    <splash platform="android" src="img/splash.png"/>
+    <splash src="splash.png" />
+    
 	<plugin name="cordova-plugin-device" spec="2.0.1" />
 	<plugin name="cordova-plugin-dialogs" spec="2.0.1" />
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2"/>
