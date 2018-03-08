@@ -6,6 +6,10 @@ function onDeviceReady() {
 	navigator.notification.beep(1);
 }
 
+function alertDismissed() {
+    navigator.notification.beep(1);
+}
+
 function deviceInfo() {
 
 	info = 	'Device Name    : '     + device.name     + '\n' + 
@@ -15,7 +19,7 @@ function deviceInfo() {
 			'Device Model   : '    + device.model     + '\n' + 
 			'Device Version : '  + device.version  + '\n';
 
-	navigator.notification.alert('Hi, I am your smartphone :)' + info, 'Info:', 'OK!');
+	navigator.notification.alert('Hi, I am your smartphone :)'+ '\n' + info, alertDismissed, 'Info:', 'OK!');
 	
 }
 
@@ -35,14 +39,14 @@ function checkConnection() {
     var networkState = navigator.connection.type;
  
     var states = {};
-    states[Connection.UNKNOWN]  = 'Unknown connection';
+    states[Connection.UNKNOWN]  = 'unknown connection';
     states[Connection.ETHERNET] = 'Ethernet connection';
     states[Connection.WIFI]     = 'WiFi connection';
-    states[Connection.CELL_2G]  = 'Cell 2G connection';
-    states[Connection.CELL_3G]  = 'Cell 3G connection';
-    states[Connection.CELL_4G]  = 'Cell 4G connection';
-    states[Connection.CELL]     = 'Cell generic connection';
-    states[Connection.NONE]     = 'No network connection';
+    states[Connection.CELL_2G]  = 'cell 2G connection';
+    states[Connection.CELL_3G]  = 'cell 3G connection';
+    states[Connection.CELL_4G]  = 'cell 4G connection';
+    states[Connection.CELL]     = 'cell generic connection';
+    states[Connection.NONE]     = 'no network connection :(';
  
-    navigator.notification.alert('Connection type: ' + states[networkState], 'Check connection', 'OK!');
+    navigator.notification.alert('Connection type: ' + states[networkState], alertDismissed, 'Check connection', 'OK!');
 }
