@@ -67,7 +67,7 @@ function getAcceleration() {
 	};
  }
  
- function watchAcceleration() {
+	function watchAcceleration() {
 	var accelerometerOptions = {
 	   frequency: 3000
 	}
@@ -75,18 +75,18 @@ function getAcceleration() {
 	   accelerometerSuccess, accelerometerError, accelerometerOptions);
  
 	function accelerometerSuccess(acceleration) {
-	   alert('Acceleration X: ' + acceleration.x + '\n' +
+		navigator.notification.alert('Acceleration X: ' + acceleration.x + '\n' +
 		  'Acceleration Y: ' + acceleration.y + '\n' +
 		  'Acceleration Z: ' + acceleration.z + '\n' +
 		  'Timestamp: '      + acceleration.timestamp + '\n');
  
 	   setTimeout(function() {
 		  navigator.accelerometer.clearWatch(watchID);
-	   }, 2000);
+	   }, 10000);
 	};
  
 	function accelerometerError() {
-	   alert('onError!');
+		navigator.notification.alert('onError!');
 	};
 	 
  }
