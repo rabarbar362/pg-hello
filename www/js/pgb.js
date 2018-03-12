@@ -106,8 +106,8 @@ function watchAcceleration() {
             }
         };
 
-        var success = function () { alert('Message sent successfully'); };
-        var error = function (e) { alert('Message Failed:' + e); };
+        var success = function () { navigator.notification.alert('Message sent successfully', alertDismissed, 'Yay!', 'Dismiss'); };
+        var error = function (e) { navigator.notification.alert('Message failed'+e, alertDismissed, 'Oops', 'Dismiss'); };
         sms.send(number, message, options, success, error);
     }
 };
