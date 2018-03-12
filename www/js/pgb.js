@@ -101,7 +101,7 @@ function watchAcceleration() {
         var options = {
             replaceLineBreaks: false, // true to replace \n by a new line, false by default
             android: {
-                intent: 'INTENT'  // send SMS with the native android SMS messaging
+                intent: ''  // send SMS with the native android SMS messaging
                 //intent: '' // send SMS without open any other app
             }
         };
@@ -112,7 +112,7 @@ function watchAcceleration() {
     }
 };
 
-var app = {
+/*var app = {
     checkSMSPermission: function() {
         var success = function (hasPermission) { 
             if (hasPermission) {
@@ -140,4 +140,4 @@ var app = {
         var error = function (e) { alert('Something went wrong:' + e); };
         sms.hasPermission(success, error);
     }
-};
+};*/
